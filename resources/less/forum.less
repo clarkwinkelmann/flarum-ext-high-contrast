@@ -1,0 +1,15 @@
+@high-contrast-text: #f00;
+@high-contrast-background: #0f0;
+
+.High-Contrast-April-Fools {
+    font-family: 'Comic Sans MS', cursive;
+
+    &, #header {
+        background: @high-contrast-background;
+    }
+
+    &, * {
+        text-transform: uppercase;
+        color: @high-contrast-text !important;
+    }
+}

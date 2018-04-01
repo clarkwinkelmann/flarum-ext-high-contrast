@@ -1,0 +1,42 @@
+{
+    "name": "clarkwinkelmann/flarum-ext-high-contrast",
+    "description": "Add an option in user settings to turn on high contrast",
+    "keywords": [
+        "extension",
+        "flarum",
+        "high-contrast",
+        "april-fools"
+    ],
+    "type": "flarum-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Clark Winkelmann",
+            "email": "clark.winkelmann@gmail.com",
+            "homepage": "https://clarkwinkelmann.com/"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/clarkwinkelmann/flarum-ext-high-contrast/issues",
+        "source": "https://github.com/clarkwinkelmann/flarum-ext-high-contrast"
+    },
+    "require": {
+        "php": ">=7.0",
+        "flarum/core": "^0.1.0-beta.7"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "High Contrast",
+            "icon": {
+                "name": "adjust",
+                "backgroundColor": "#00ff00",
+                "color": "#ff0000"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "ClarkWinkelmann\\HighContrast\\": "src/"
+        }
+    }
+}

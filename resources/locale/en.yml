@@ -1,0 +1,8 @@
+clarkwinkelmann-high-contrast:
+    forum:
+        settings:
+            section:
+                title: For advanced users only
+
+            high-contrast:
+                label: Enable High Contrast mode
