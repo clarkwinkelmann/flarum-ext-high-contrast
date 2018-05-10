@@ -40,7 +40,6 @@ System.register('clarkwinkelmann/high-contrast/addSettings', ['flarum/extend', '
         extend(SettingsPage.prototype, 'settingsItems', function (items) {
             items.add('clarkwinkelmann-high-contrast', FieldSet.component({
                 label: app.translator.trans('clarkwinkelmann-high-contrast.forum.settings.section.title'),
-                //className: 'Settings-privacy',
                 children: [Switch.component({
                     children: app.translator.trans('clarkwinkelmann-high-contrast.forum.settings.high-contrast.label'),
                     state: this.user.preferences().clarkwinkelmannHighContrast,
@@ -84,7 +83,6 @@ System.register('clarkwinkelmann/high-contrast/main', ['flarum/app', 'clarkwinke
             app.initializers.add('clarkwinkelmann-high-contrast', function () {
                 addAppClass();
                 addSettings();
-                console.log('here2');
             });
         }
     };

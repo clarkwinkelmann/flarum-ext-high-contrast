@@ -9,7 +9,6 @@ export default function () {
         items.add('clarkwinkelmann-high-contrast',
             FieldSet.component({
                 label: app.translator.trans('clarkwinkelmann-high-contrast.forum.settings.section.title'),
-                //className: 'Settings-privacy',
                 children: [
                     Switch.component({
                         children: app.translator.trans('clarkwinkelmann-high-contrast.forum.settings.high-contrast.label'),
